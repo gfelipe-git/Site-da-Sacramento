@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding-bottom: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -261,5 +262,27 @@ header{
 
     #Titulo-2, #Fale-Conosco{
         font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .Nossas-Lojas{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .Card-Loja{
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+
+    #Comunicacao{
+        padding-bottom: 40px;
+    }
+
+    .Card-Contato{
+        width: 45%;
     }
 }
