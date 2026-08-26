@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#Logotipo{
+    width: 400px;
+}
+
+.sac{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.texto{
+    width: 55%;
+    background-color: rgb(163, 162, 162);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#Titulo-Principal{
+    margin: 0 0 20px 0;
+    font-size: 42px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 200px;
+}
+
+#Introducao{
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+}
+
+#Img-principal{
+    width: 35%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#Img-principal:hover{
+    transform: scale(1.02);
+}
+
+.Nossas-Lojas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#Titulo-2{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+}
+
+#Loja-1{
+    width: 250px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: darkblue;
+    font-family: "Inter", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#Loja-1:hover{
+    transform: scale(1.02);
+}
+
+#H-1{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#H-1:hover{
+    transform: scale(1.1);
+}
+
+#Loja-2{
+    width: 250px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: darkblue;
+    font-family: "Inter", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#Loja-2:hover{
+    transform: scale(1.02);
+}
+
+#H-2{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#H-2:hover{
+    transform: scale(1.1);
+}
+
+#Loja-3{
+    width: 250px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: darkblue;
+    font-family: "Inter", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#Loja-3:hover{
+    transform: scale(1.02);
+}
+
+#H-3{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#H-3:hover{
+    transform: scale(1.1);
+}
+
+#Loja-4{
+    width: 250px;
+    margin: 30px auto;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: darkblue;
+    font-family: "Inter", sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#Loja-4:hover{
+    transform: scale(1.02);
+}
+
+#H-4{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#H-4:hover{
+    transform: scale(1.1);
+}
+
+#Fale-Conosco{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 42px;
+}
+
+#Comunicacao{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.logomarcas{
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.logomarcas:hover{
+    transform: scale(1.1);
+}
+
+.Link-contato{
+    text-decoration: none;
+    color: darkblue;
+    transition: transform 0.4s ease;
+    font-family: cursive;
+}
+
+.Link-contato:hover{
+    transform: scale(1.1);
+}
+
+#btn-topo{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    z-index: 999;
+}
+
+#btn-topo.visivel{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}   
+
+@media (max-width: 900px){
+    .sac{
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .texto{
+        width: 100%;
+    }
+
+    #Titulo-Principal{
+        margin-left: 0;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #Img-principal{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    #Logotipo{
+        width: 260px;
+    }
+
+    #Introducao{
+        font-size: 18px;
+    }
+
+    #Titulo-2, #Fale-Conosco{
+        font-size: 30px;
+    }
+}
